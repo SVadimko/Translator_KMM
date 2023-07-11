@@ -3,7 +3,8 @@ object Deps {
     private const val activityComposeVersion = "1.6.1"
     const val activityCompose = "androidx.activity:activity-compose:$activityComposeVersion"
 
-    const val composeVersion = "1.4.0-alpha02"
+    const val composeVersion = "1.4.3"
+    const val composeCompilerVersion = "1.4.4"
     const val composeUi = "androidx.compose.ui:ui:$composeVersion"
     const val composeUiTooling = "androidx.compose.ui:ui-tooling:$composeVersion"
     const val composeUiToolingPreview = "androidx.compose.ui:ui-tooling-preview:$composeVersion"
@@ -22,11 +23,12 @@ object Deps {
     const val kotlinDateTime = "org.jetbrains.kotlinx:kotlinx-datetime:$dateTimeVersion"
 
     // HILT
-    private const val hiltVersion = "2.42"
+    private const val hiltVersion = "2.46.1"
     private const val hiltCompilerVersion = "1.0.0"
     const val hiltAndroid = "com.google.dagger:hilt-android:$hiltVersion"
     const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:$hiltVersion"
-    const val hiltCompiler = "androidx.hilt:hilt-compiler:$hiltCompilerVersion"
+//    const val hiltCompiler = "androidx.hilt:hilt-compiler:$hiltCompilerVersion"
+    const val hiltCompiler = "com.google.dagger:hilt-compiler:$hiltVersion"
     const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:$hiltCompilerVersion"
 
     // KTOR

@@ -6,9 +6,9 @@ plugins {
     kotlin("plugin.serialization") version Deps.kotlinVersion*/
     id(Plugins.androidApplication)
     kotlin(KotlinPlugins.android)
-    kotlin(KotlinPlugins.kapt)
     kotlin(KotlinPlugins.serialization) version Deps.kotlinVersion
     id(Plugins.hilt)
+    kotlin(KotlinPlugins.kapt)
 }
 
 android {
@@ -25,7 +25,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.4"
+        kotlinCompilerExtensionVersion = Deps.composeCompilerVersion
     }
     packagingOptions {
         resources {
