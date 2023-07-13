@@ -104,3 +104,10 @@ android {
         create("testReleaseApi")
     }
 }
+
+sqldelight{
+    database("TranslateDatabase"){
+        packageName = "com.vadimko.translator_kmm.database"
+        sourceFolders = listOf("sqldelight")
+    }
+}
